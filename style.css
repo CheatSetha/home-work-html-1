@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Koh Santepheap", serif;
+}
+
+.hero {
+  width: 100%;
+  height: 300px;
+  background-color: grey;
+  color: white;
+  font-family: Khmer OS;
+  font-family: "Koh Santepheap", serif;
+  font-weight: 700;
+  font-style: normal;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.footer {
+  background-color: #f1f1f1;
+  color: darkblue;
+  padding: 15px 0;
+  text-align: center;
+  font-family: "Koh Santepheap", serif;
+  font-weight: bold;
+  font-style: normal;
+}
+.box-desti-container{
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* gap: 10px; */
+    justify-content: space-between;
+    margin: 20px 0;
+   
+
+}
+
+.box-item {
+    width: 24%;
+    height: fit-content;
+    padding: 8px;
+    border:  1px solid #f1f1f1;
+}
+.box-item > img {
+    width: 100%;
+    max-height: 120px;
+    
+    object-fit: cover;
+}
+.box-item > h2 {
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    color: darkblue;
+    margin-top: 5px;
+}
+.box-item > p {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+}
+
+.abt-cam-container {
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    gap: 20px;
+    justify-content: space-between;
+}
+.abt-title{
+    color: darkblue;
+    margin-bottom: 15px;
+}
+.abt-cam-container > div > p{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    text-align: justify;
+}
+.abt-box {
+    width:48%;
+}
+#area-of-kh{
+    color: red;
+}
+
+/* response width 100% when in mobile view */
+@media screen and (max-width: 768px) {
+    .box-item {
+        width: 100%;
+    }
+    .abt-box {
+        width: 100%;
+    }
+    .box-desti-container{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .box-item > img {
+        max-height: fit-content;
+    }
+    .hero > h1 {
+        font-size: 24px;
+    
+    }
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
